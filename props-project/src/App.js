@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Fruit from './Fruit'
 
+
+const data = [
+  {id:1,img:'./',title:'Apple',uom:'02',size:'02',tit:'$8.99',tota:'$17.88'},
+  {id:2,img:'./',title:'Banana',uom:'02',size:'02',tit:'$8.99',tota:'$17.88'},
+  {id:3,img:'./',title:'Olma',uom:'02',size:'02',tit:'$8.99',tota:'$17.88'},
+  {id:4,img:'./',title:'Gilos',uom:'02',size:'02',tit:'$8.99',tota:'$17.88'},
+]
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+     {
+       
+         data.map((value,index)=>{
+           return(
+             
+            <div>
+              <Fruit />
+              </div>
+
+           )
+
+       })
+     }
+   
     </div>
   );
 }
