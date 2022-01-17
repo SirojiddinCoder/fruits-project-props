@@ -7,7 +7,7 @@ body{
 height: 600px;
 }
 .container{
-  
+  overflow-y: scroll;
   width: 400px;
   height: 500px;
   border: 1px solid whitesmoke;
@@ -54,6 +54,7 @@ h1{
  outline: none;
  margin-left: auto;
  border-style: 0;
+ cursor: pointer;
  
 
 }
